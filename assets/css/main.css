@@ -3950,3 +3950,16 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/* error page */
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
