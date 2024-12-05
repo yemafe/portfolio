@@ -1,6 +1,6 @@
 
 Basic page made with php+twig with routing and error page.
-Based on [Forty] (https://html5up.net/forty), a free theme from HTML5UP website, you can preview it.
+Based on [Forty](https://html5up.net/forty), a free theme from HTML5UP website, you can preview it.
 
 Credits:
     Forty by HTML5 UP
