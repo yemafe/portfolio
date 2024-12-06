@@ -14,7 +14,11 @@ $routes = [
 ];
 
 if (array_key_exists($route, $routes)) {
-    echo $twig->render($routes[$route]);
+    if ($route === '/landing' && isset($_GET['item'])) {
+        echo $twig->render($routes[$route], ['item' => $_GET['item']]);
+    } else {
+        echo $twig->render($routes[$route]);
+    }
 } else {
     echo $twig->render('errorPage.twig', []);
 }
