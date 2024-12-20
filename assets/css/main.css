@@ -3954,13 +3954,19 @@ input, select, textarea {
 		margin-left: 5px;
 	}
 
-.pill{
+.pill {
 	padding: 0px 10px;
 	text-align: center;
 	display: inline-block;
 	margin: 4px 0px;
 	border-radius: 16px;
 	font-size: 0.7em;
+	opacity: 0.5;
+	transition: opacity 0.5s ease;
+}
+
+.tiles article:hover .pill {
+	opacity: 1;
 }
 
 .php{
