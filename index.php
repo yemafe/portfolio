@@ -17,7 +17,7 @@ $routes = [
 if (
     !array_key_exists($route, $routes) ||
     ($route === '/landing' && (!isset($_GET['item']) ||
-    !in_array($_GET['item'], ['eventiverse', 'backoffice'])))
+    !in_array($_GET['item'], ['eventiverse', 'backoffice', 'portfolio'])))
 ) {
     echo $twig->render('404.twig', []);
 }else{

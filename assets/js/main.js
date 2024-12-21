@@ -331,5 +331,4 @@
 						$menu._hide();
 
 			});
-
 })(jQuery);
