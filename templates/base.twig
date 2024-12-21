@@ -10,7 +10,7 @@
         <div id="wrapper">
             <header id="header">
                 <div class="coin-container">
-                    <div class="coin"></div>
+                    <img class="coin" src="../images/yemafe-logo.png" alt="yemafe logo" />
                 </div>
                 <a href="/" class="logo">
                     <strong>Yemafe</strong> <span> portfolio</span>
@@ -25,13 +25,11 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/landing?item=eventiverse">Eventiverse</a></li>
                     <li><a href="/landing?item=backoffice">Backoffice de Eventiverse</a></li>
-                    <li><a href="/landing?item=portfolio">Portfolio</a></li>
                 </ul>
             </nav>
             {% block content %}{% endblock %}
             {{ include('footer.twig') }}
         </div>
-
 
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -40,11 +38,6 @@
         <script src="../assets/js/breakpoints.min.js"></script>
         <script src="../assets/js/util.js"></script>
         <script src="../assets/js/main.js"></script>
-        <script> // ver
-            const coin = document.querySelector('.coin');
-            coin.addEventListener('animationend', () => {
-                coin.style.animation = '';
-            });
-        </script>
+
     </body>
 </html>

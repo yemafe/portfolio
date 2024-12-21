@@ -3774,6 +3774,9 @@ input, select, textarea {
 			#wrapper {
 				padding-top: 2.75em;
 			}
+			 .coin{
+				 visibility: hidden;
+			 }
 
 		}
 
@@ -4010,28 +4013,31 @@ input, select, textarea {
 }
 
 
-
 /* coin */
-
-
 .coin-container {
 	position: relative;
-	width: 50px;
-	height: 50px;
+	width: 55px;
+	height: 55px;
 }
 
 .coin {
 	position: absolute;
-	top: 20%;
-	left: 50%;
-	width: 100%;
+	top: 10%;
+	margin-left: 1em;
 	height: 100%;
-	background-image: url('https://imageshack.com/i/pnBpdRugp');
-	background-size: cover;
-	background-position: center;
-	border-radius: 50%;
-	transform-origin: center;
-	animation: spin-series 6s ease-in-out forwards;
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
 }
 
 
